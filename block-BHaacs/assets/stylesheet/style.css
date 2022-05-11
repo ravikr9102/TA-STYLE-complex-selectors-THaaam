@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My Resets */
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+button {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+body{
+    font-size: 16px;
+    line-height: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.padding{
+    padding: 1rem 0;
+}
+.width{
+    width: 100%;
+}
+.text-align{
+    text-align: center;
+}
+.flex-two{
+    display: flex;
+}
+.align-items{
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.align-start{
+    align-items: flex-start;
+}
+a{
+    text-decoration: none;
+}
+
+/* General Styles */
+
+
+
+/* Header */
+
+.header{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    
+}
+.header a {
+    font-size: 1.2rem;
+    color: white;
+}
+.header a:hover{
+    color: orangered;
+}
+.brand{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.btn{
+    text-align: center;
+}
+.navbar li{
+    margin-left: 1.5rem;
+}
+
+
+/* Hero */
+
+.hero{
+    background-color: rgb(89,191,194,0.6);
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.hero-h1{
+    padding-top: 9rem;
+}
+.hero-h1 h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 500;
+}
+.hero-h1 .btn{
+    font-size: 1.5rem;
+    color: #283E7D;
+    font-weight: 800;
+}
+.btn{
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    margin-top: 1.5rem;
+}
+.fig{
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    left: 1rem;
+}
+
+/* file section */
+
+.file-section {
+    margin-top: 17rem;
+}
+.file-section a {
+    color: #BFC9E1;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 3rem;
+}
+.file-section a[href$="pdf"]{
+    background-image: url(../media/pdf.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.file-section a[href$="doc"]{
+    background-image: url(../media/word.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.file-section a[href$="jpg"]{
+    background-image: url(../media/image.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.file-section a[href$="mp4"]{
+    background-image: url(../media/video.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+hr {
+    margin-top: 3rem;
+    border: 2px solid #BFD1F6;
+}
+
+
+/* graph section */
+.graph-section h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #283E7D;
+}
+.btn-secondary{
+    clip-path: polygon(75% 0%, 88% 49%, 75% 100%, 0% 100%, 7% 52%, 0% 0%);
+    padding: 0.6rem 3rem;
+    width: 15rem;
+    background-color: #59BFC2;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.article p{
+    color: #283E7D;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+
+/* secore section */
+
+.score-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #2D4380;
+}
+table {
+    text-align: left;
+    margin: 0 auto;
+    width: 94.5%;
+    margin-top: 2rem;
+}
+td{
+    border: 1px solid #c9c4c4;
+    padding: 1rem 1rem;
+    padding-right: 5rem;
+    color: #808288;
+    font-size: 1rem;
+    font-weight: 500;
+}
+th {
+    background-color: #59BFC2;
+    color: #fff;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+tr:nth-child(2n+1){
+    background-color: #D5E5E5;
+}
+
+/* Rate section */
+
+.outer-circle{
+    background-color: #BBECEC;
+    width: 6rem;
+    padding: 0.3rem 0;
+    border-radius: 3rem;
+    margin: 0 0.8rem;
+}
+.circle{
+    background-color: #59BFC2;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border: 0.2rem solid rgb(90, 89, 89);
+    padding: 1.5rem;
+    margin: 1rem;
+}
+.border h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #4e70bb;
+}
+.border p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #778AB4;
+    line-height: 1.5;
+    margin: 1rem 0;
+    font-weight: 550;
+}
+.border li{
+    font-size: 1.5rem ;
+    color: #4e70bb;
+    font-weight: 600;
+}
+.non-active li{
+    font-weight: 500;
+}
+small {
+    font-size: 4rem;
+    color: #59BFC2;
+}
+
+small::before {
+    content: "$";
+    font-size: 2.5rem;
+    margin-right: 0.50rem;
+}
+small::after {
+    content: "/Month";
+    color: #495880;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.rate-section .btn, .white {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #59BFC2;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.rate-section h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: #283E7D;
+}
+.white {
+    background-color: #fff;
+    color: #283E7D;
+    border: 2px solid #283E7D;
+    border-radius: 8px;
+}
+.white a{
+    color: #283E7D;
+}
+.flex-two li{
+    margin-left: 1rem;
+}
+.active{
+    background-color: #59BFC2;
+}
+.rate-section strong{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Button section */
+.button-content{
+    background-color: #59BFC2;
+    height: 17rem;
+    border-radius: 2rem;
+}
+.btn-heading{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.button-content button{
+    padding: 1.3rem 5rem;
+    margin-top: 4rem;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer .circle {
+    margin-left: 0rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+.footer h5{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2D4380;
+}
+.footer-circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-circle i{
+    color: #fff;
+}
+.footer p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #6F83AF;
+}
+.footer a{
+    color: #6F83AF;
+    font-size: 1.2rem;
+}
